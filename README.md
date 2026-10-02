@@ -1,5 +1,7 @@
 # Repro: SegmentedControl segments can't have icons
 
+Issue: https://github.com/DartNative/dartnative/issues/69
+
 `SegmentedControl` takes `segments: List<String>`, so a segment can only be a title. Flutter's `SegmentedButton` takes `ButtonSegment(icon:, label:)`, and apps ported from it lose their segment icons (here: a receipt, a wrench and a handshake for Expenses / Maintenance / Debts).
 
 ## Run
